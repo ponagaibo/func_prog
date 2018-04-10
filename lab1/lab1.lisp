@@ -1,0 +1,10 @@
+(defun knight-attack (k l m n)
+  (cond ((and (> (abs (- k m)) 0)
+             (> (abs (- l n)) 0)
+             (= (+ (abs (- k m)) (abs (- l n))) 3)) (print "yes"))
+        (t (print nil))))
+
+(knight-attack 4 4 5 5)
+(knight-attack 4 4 5 6)
+(knight-attack 1 1 2 4)
+(knight-attack 1 1 2 3)
